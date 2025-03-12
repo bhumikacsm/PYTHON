@@ -1,0 +1,11 @@
+def sum_of_squares(N):
+    return (N * (N + 1) * (2 * N + 1)) // 6  # Using integer division
+
+# Example Usage
+N = int(input("Enter a number: "))def sum_of_squares(N):
+    return (N * (N + 1) * (2 * N + 1)) // 6  # Using integer division
+
+# Example Usage
+N = int(input("Enter a number: "))
+print("Sum of squares of first", N, "natural numbers is:", sum_of_squares(N))
+print("Sum of squares of first", N, "natural numbers is:", sum_of_squares(N))
