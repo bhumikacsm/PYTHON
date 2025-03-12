@@ -1,0 +1,7 @@
+#defult arrgument
+def greet(name="Guest"):
+    print(f"Hello, {name}!")
+
+greet()  
+greet("Bhumika")
+print("bhumika ec10")
