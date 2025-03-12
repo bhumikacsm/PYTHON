@@ -1,0 +1,15 @@
+import math
+
+def math_operations(n):
+    sqrt_val = math.sqrt(n)
+    factorial_val = math.factorial(n) if n >= 0 and isinstance(n, int) else "Undefined for non-integers/negative"
+    sine_val = math.sin(math.radians(n))
+
+    print(f"Square root of {n}: {sqrt_val}")
+    print(f"Factorial of {n}: {factorial_val}")
+    print(f"Sine of {n} degrees: {sine_val}")
+
+number = 5
+math_operations(number)
+
+print("bhumika ec10")
