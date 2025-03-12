@@ -1,0 +1,7 @@
+def sum_numbers(*args):
+    return sum(args)
+
+result = sum_numbers(10, 20, 30, 40)
+print(f"Sum: {result}")
+
+print("bhumika ec10")
