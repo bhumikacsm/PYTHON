@@ -1,0 +1,11 @@
+def fibonacci(n):
+    fib_series = [0, 1]
+    for _ in range(2, n):
+        fib_series.append(fib_series[-1] + fib_series[-2])
+    return fib_series[:n] 
+
+N = 10
+fib_numbers = fibonacci(N)
+print(f"First {N} Fibonacci numbers: {fib_numbers}")
+
+print("bhumika ec10")
