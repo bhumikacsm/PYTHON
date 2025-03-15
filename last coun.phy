@@ -1,0 +1,10 @@
+ef count_occurrences(lst, element):
+    return lst.count(element)
+
+numbers = [10, 20, 30, 10, 40, 50, 10, 20, 10]
+
+element_to_count = 10
+
+count = count_occurrences(numbers, element_to_count)
+
+print("bhumika ec10: The element", element_to_count, "appears", count, "times in the list.")
