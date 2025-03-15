@@ -1,0 +1,10 @@
+my_tuple = (10, 20, 30, 40, 50)
+
+my_list = list(my_tuple)
+
+new_list = [60, 70, 80, 90, 100]
+
+new_tuple = tuple(new_list)
+
+print("bhumika ec10: Tuple to List:", my_list)
+print("bhumika ec10: List to Tuple:", new_tuple)
