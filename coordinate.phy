@@ -1,0 +1,26 @@
+class Point:
+    def __init__(self, x, y):
+        self.x = x  # x-coordinate
+        self.y = y  # y-coordinate
+
+    # Overloading the + operator
+    def __add__(self, other):
+        # Check if the other object is an instance of the same class
+        if isinstance(other, Point):
+            # Return a new Point object that adds the x and y coordinates
+            return Point(self.x + other.x, self.y + other.y)
+        return NotImplemented
+
+    def __str__(self):
+        # This will define how the Point objects are displayed when printed
+        return f"({self.x}, {self.y})"
+
+# Create two Point objects
+point1 = Point(1, 2)
+point2 = Point(3, 4)
+
+# Use the overloaded + operator to add the two Point objects
+result = point1 + point2
+
+# Print the result
+print(f"Result of adding point1 and point2: {result}")
