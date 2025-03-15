@@ -1,0 +1,9 @@
+my_tuple = (10, 20, 30, 40, 50)
+
+first_element = my_tuple[0]
+middle_element = my_tuple[2]
+last_element = my_tuple[-1]
+
+print("bhumika ec10: First element:", first_element)
+print("bhumika ec10: Middle element:", middle_element)
+print("bhumika ec10: Last element:", last_element)
