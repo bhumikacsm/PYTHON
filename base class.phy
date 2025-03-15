@@ -1,0 +1,35 @@
+# Level 1: Base class (Grandparent)
+class Grandparent:
+    def __init__(self, name):
+        self.name = name
+
+    def show_grandparent(self):
+        print(f"Grandparent: {self.name}")
+
+# Level 2: Parent class inherits from Grandparent
+class Parent(Grandparent):
+    def __init__(self, name, occupation):
+        # Call the constructor of the Grandparent class
+        super().__init__(name)
+        self.occupation = occupation
+
+    def show_parent(self):
+        print(f"Parent: {self.name}, Occupation: {self.occupation}")
+
+# Level 3: Child class inherits from Parent
+class Child(Parent):
+    def __init__(self, name, occupation, age):
+        # Call the constructor of the Parent class
+        super().__init__(name, occupation)
+        self.age = age
+
+    def show_child(self):
+        print(f"Child: {self.name}, Age: {self.age}")
+
+# Creating an object of the Child class
+child_obj = Child("Alice", "Engineer", 25)
+
+# Calling methods from all levels of the inheritance hierarchy
+child_obj.show_grandparent()  # Method from Grandparent class
+child_obj.show_parent()       # Method from Parent class
+child_obj.show_child()        # Method from Child class
