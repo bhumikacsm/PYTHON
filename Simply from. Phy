@@ -1,0 +1,23 @@
+Here's a simple Python program that defines a Car class with attributes brand and model, along with a method to display these attributes:
+
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def display_info(self):
+        print(f"Car Brand: {self.brand}, Model: {self.model}")
+
+# Example usage
+my_car = Car("Toyota", "Corolla")
+my_car.display_info()
+
+Explanation:
+
+The __init__ method initializes the brand and model attributes.
+
+The display_info method prints the car's details.
+
+The example usage creates a Car object with "Toyota" as the brand and "Corolla" as the model, then displays the details.
+
+
