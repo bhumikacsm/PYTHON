@@ -1,0 +1,25 @@
+The previous program already uses the __init__ method to initialize the attributes. However, here's the same code with a clearer explanation:
+
+class Car:
+    def __init__(self, brand, model):
+        """Initialize the Car object with brand and model attributes."""
+        self.brand = brand
+        self.model = model
+
+    def display_info(self):
+        """Display the car's brand and model."""
+        print(f"Car Brand: {self.brand}, Model: {self.model}")
+
+# Example usage
+my_car = Car("Honda", "Civic")
+my_car.display_info()
+
+Explanation:
+
+The __init__ method is a constructor that initializes the brand and model attributes when an object is created.
+
+The display_info method prints the car's details.
+
+An instance of Car (my_car) is created with "Honda" as the brand and "Civic" as the model, then the details are displayed.
+
+
