@@ -1,0 +1,57 @@
+Here's a Python program demonstrating Encapsulation using a BankAccount class with private attributes and secure methods for deposit and withdrawal:
+
+class BankAccount:
+    def __init__(self, initial_balance=0):
+        """Initialize the BankAccount with a private balance attribute."""
+        self.__balance = initial_balance  # Private attribute
+
+    def deposit(self, amount):
+        """Deposit money into the account."""
+        if amount > 0:
+            self.__balance += amount
+            print(f"Deposited: ${amount}. New Balance: ${self.__balance}")
+        else:
+            print("Deposit amount must be positive.")
+
+    def withdraw(self, amount):
+        """Withdraw money securely from the account."""
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+            print(f"Withdrew: ${amount}. New Balance: ${self.__balance}")
+        else:
+            print("Insufficient balance or invalid amount.")
+
+    def get_balance(self):
+        """Get the current balance (secure access)."""
+        return self.__balance
+
+# Example usage
+account = BankAccount(100)  # Initial balance of $100
+account.deposit(50)         # Deposit $50
+account.withdraw(30)        # Withdraw $30
+print(f"Final Balance: ${account.get_balance()}")  # Display balance
+
+# Trying to access private attribute directly (will cause an error)
+# print(account.__balance)  # AttributeError: 'BankAccount' object has no attribute '__balance'
+
+Explanation:
+
+1. Encapsulation: The __balance attribute is private, meaning it cannot be accessed directly outside the class.
+
+
+2. Secure Methods:
+
+deposit(amount): Adds money to the account, ensuring only positive values are allowed.
+
+withdraw(amount): Withdraws money securely, preventing overdrafts.
+
+get_balance(): Provides a secure way to view the balance.
+
+
+
+3. Direct Access Restriction: Attempting account.__balance outside the class will raise an error due to encapsulation.
+
+
+
+This ensures the BankAccount class maintains data security and integrity while allowing controlled access to the balance.
+
