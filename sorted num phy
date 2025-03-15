@@ -1,0 +1,7 @@
+numbers = [50, 10, 40, 30, 20]
+
+ascending_order = sorted(numbers)
+
+descending_order = sorted(numbers, reverse=True)
+print("bhumika ec10: Ascending order:", ascending_order)
+print("bhumika ec10: Descending order:", descending_order)
