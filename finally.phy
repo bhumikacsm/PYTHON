@@ -1,0 +1,9 @@
+try:
+    num = int(input("Enter a number: "))
+    result = 10 / num  # This might raise ZeroDivisionError or ValueError
+except (ZeroDivisionError, ValueError) as e:
+    print(f"Error: {e}")
+else:
+    print(f"Result is: {result}")
+finally:
+    print("Execution finished.")
