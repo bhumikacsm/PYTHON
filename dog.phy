@@ -1,0 +1,21 @@
+# Class 1: Dog
+class Dog:
+    def speak(self):
+        return "Woof!"
+
+# Class 2: Cat
+class Cat:
+    def speak(self):
+        return "Meow!"
+
+# Function demonstrating polymorphism
+def animal_sound(animal):
+    print(animal.speak())
+
+# Creating instances of both classes
+dog = Dog()
+cat = Cat()
+
+# Calling the function with different objects (demonstrating polymorphism)
+animal_sound(dog)  # Outputs: Woof!
+animal_sound(cat)  # Outputs: Meow!
