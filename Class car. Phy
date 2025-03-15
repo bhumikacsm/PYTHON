@@ -1,0 +1,37 @@
+Here's a Python program that creates multiple objects of the Car class with different attributes and displays their details:
+
+class Car:
+    def __init__(self, brand, model):
+        """Initialize the Car object with brand and model attributes."""
+        self.brand = brand
+        self.model = model
+
+    def display_info(self):
+        """Display the car's brand and model."""
+        print(f"Car Brand: {self.brand}, Model: {self.model}")
+
+# Creating multiple Car objects
+car1 = Car("Toyota", "Corolla")
+car2 = Car("Honda", "Civic")
+car3 = Car("Ford", "Mustang")
+
+# Displaying details of each car
+car1.display_info()
+car2.display_info()
+car3.display_info()
+
+Output:
+
+Car Brand: Toyota, Model: Corolla
+Car Brand: Honda, Model: Civic
+Car Brand: Ford, Model: Mustang
+
+Explanation:
+
+The Car class has an __init__ method to initialize the brand and model attributes.
+
+Three objects (car1, car2, and car3) are created with different attributes.
+
+The display_info method is called for each object to print their details.
+
+
