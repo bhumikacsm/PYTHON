@@ -1,0 +1,54 @@
+Here's a Python program demonstrating the use of getters and setters to access and modify private attributes of a class:
+
+class BankAccount:
+    def __init__(self, initial_balance=0):
+        """Initialize the BankAccount with a private balance attribute."""
+        self.__balance = initial_balance  # Private attribute
+
+    # Getter method to access the private balance
+    def get_balance(self):
+        return self.__balance
+
+    # Setter method to modify the private balance
+    def set_balance(self, amount):
+        if amount >= 0:
+            self.__balance = amount
+            print(f"Balance updated to: ${self.__balance}")
+        else:
+            print("Balance cannot be negative.")
+
+# Example usage
+account = BankAccount(100)  # Initial balance of $100
+
+# Accessing balance using getter
+print(f"Current Balance: ${account.get_balance()}")
+
+# Modifying balance using setter
+account.set_balance(200)
+print(f"Updated Balance: ${account.get_balance()}")
+
+# Attempting to set a negative balance (will not be allowed)
+account.set_balance(-50)
+
+Explanation:
+
+1. Encapsulation: The __balance attribute is private, ensuring it can't be accessed directly.
+
+
+2. Getter (get_balance): Provides controlled access to the balance.
+
+
+3. Setter (set_balance): Allows modifying the balance but ensures it cannot be negative.
+
+
+4. Usage:
+
+The getter is used to retrieve the current balance.
+
+The setter is used to update the balance with validation.
+
+
+
+
+This approach ensures data integrity and security while allowing controlled modifications.
+
