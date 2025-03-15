@@ -1,0 +1,31 @@
+# Parent class 1
+class Parent1:
+    def __init__(self):
+        self.name = "Parent 1"
+    
+    def greet(self):
+        print("Hello from Parent 1!")
+
+# Parent class 2
+class Parent2:
+    def __init__(self):
+        self.age = 40
+    
+    def greet(self):
+        print("Hello from Parent 2!")
+
+# Child class that inherits from both Parent1 and Parent2
+class Child(Parent1, Parent2):
+    def __init__(self):
+        # Calling the constructors of both parent classes
+        Parent1.__init__(self)
+        Parent2.__init__(self)
+    
+    def display_info(self):
+        print(f"Name: {self.name}, Age: {self.age}")
+
+# Creating an object of the Child class
+child_obj = Child()
+
+# Calling methods from both Parent classes
+child_obj.greet()  # This will call the greet method of Parent1 (the first parent class in the inher
