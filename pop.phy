@@ -1,0 +1,5 @@
+number = [70,80,90,60]
+number.remove(60)
+removed_element = number.pop(2)
+print("bhumika ec10:upated list:",number)
+print("bhumika ec10:poped element:",removed_element)
