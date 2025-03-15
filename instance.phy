@@ -1,0 +1,30 @@
+class MyClass:
+    # Class-level attribute
+    class_variable = "I am a class variable"
+    
+    def __init__(self, instance_variable):
+        # Instance-level attribute
+        self.instance_variable = instance_variable
+
+    # Instance method
+    def instance_method(self):
+        print(f"Instance method: {self.instance_variable}")
+    
+    # Class method
+    @classmethod
+    def class_method(cls):
+        print(f"Class method: {cls.class_variable}")
+    
+    # Static method
+    @staticmethod
+    def static_method():
+        print("Static method: This method doesn't depend on instance or class state.")
+
+# Creating an object of MyClass
+obj = MyClass("I am an instance variable")
+
+# Calling the instance method
+obj.instance_method()  # Outputs: Instance method: I am an instance variable
+
+# Calling the class method using the class name
+MyClass.class_method()  # Outputs: Class 
