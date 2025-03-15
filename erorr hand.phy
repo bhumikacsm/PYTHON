@@ -1,0 +1,8 @@
+try:
+    # Code that might raise an exception
+except <ExceptionType>:
+    # Code that runs if an exception occurs
+else:
+    # Code that runs if no exception occurs
+finally:
+    # Code that runs no matter what (optional)
